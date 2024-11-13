@@ -24,8 +24,8 @@ function atualizarQuantidade(incremento) {
   atualizarPrecoTotal();
 }
 
-document.getElementById('aumentar-btn').addEventListener('click', () => atualizarQuantidade(1));
-document.getElementById('diminuir-btn').addEventListener('click', () => atualizarQuantidade(-1));
+document.getElementById('botao-aumentar').addEventListener('click', () => atualizarQuantidade(1));
+document.getElementById('botao-diminuir').addEventListener('click', () => atualizarQuantidade(-1));
 
 document.getElementById('quantidade').addEventListener('input', atualizarPrecoTotal);
 
