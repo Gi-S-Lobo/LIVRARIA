@@ -277,7 +277,6 @@ input[type="submit"]:hover {
 
 .detalhes-livro {
   display: flex;
-  justify-content:row;
   padding: 30px;
   max-width: 1100px;
   margin: 200px;
@@ -339,36 +338,24 @@ input[type="submit"]:hover {
 }
 
 .botao-quantidade {
-  background-color: #f0f0f0;
-  color: #333;
-  border: none;
-  padding: 10px;
-  font-size: 1.5rem;
-  border-radius: 5px;
-  cursor: pointer;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-  margin: 0 10px;
+  justify-content: space-around;
+  background-color: #800020;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 170px;
 }
 
 .botao-quantidade i {
   font-size: 1rem;
 }
 
-.botao-quantidade:hover {
-  background-color: #ddd;
-}
-
 .input-quantidade {
-  width: 50px;
-  padding: 5px;
+  width: 40px;
   text-align: center;
-  font-size: 1.2rem;
-  margin: 0 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 .input-quantidade:focus {
@@ -379,27 +366,30 @@ input[type="submit"]:hover {
 .container-quantidade {
   display: flex;
   align-items: center;
-  justify-content: left;
-  
+  gap: 10px;
+  margin-top: 15px;
 }
-.preco-total {
-  margin-top: 10px;
-  font-weight: bold;
+
+.preco-total{
+  margin-top: 50px;
 }
+
+
+
 .botao-comprar {
-  background-color: #FFD700;
-    color: #800020;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 220px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 250px;
 }
 
 .botao-comprar:hover {
   background-color: #c0392b;
-  color:#c1bfbf;
 }
 
 @media (max-width: 768px) {
@@ -422,6 +412,7 @@ input[type="submit"]:hover {
   }
 }
 
+/* Botões */
 button {
   position: absolute;
   top: 50%;
