@@ -113,7 +113,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('../../Documentos/HTML/planofundo_login.png') no-repeat center center;
+  background: url('planofundo_login.png') no-repeat center center;
   background-size: cover;
 }
 
@@ -177,7 +177,7 @@ input[type="submit"]:hover {
 }
 
 .banner {
-  background: url('../HTML/Banner\ para\ loja\ online\ moderno\ com\ desconto\ de\ livros\ black\ friday\ .png') no-repeat center center;
+  background: url('Banner\ para\ loja\ online\ moderno\ com\ desconto\ de\ livros\ black\ friday\ .png') no-repeat center center;
   background-size: cover;
   padding: 200px 20px;
   color: white;
