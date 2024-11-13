@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Cadastro - Livraria</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css"> 
+</head>
+<body>
+    <header>
+        <div class="conteudo-cabecalho">
+            <div class="logo">
+                <a href="home.html">Livraria</a>
+            </div>
+            <nav class="barra-navegacao">
+                <ul>
+                    <li><a href="home.html">Menu</a></li>
+                    <li>Livros</li>
+                    <li>Promoções</li>
+                </ul>
+                <div class="campo-pesquisa">
+                    <input type="text" placeholder="Pesquisar livros...">
+                    <a href="#" class="icone-pesquisa"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="icones-cabecalho">
+                    <a href="livros.html" class="icone"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="contato.html" class="icone"><i class="fas fa-user"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <div class="container">
+        <div class="container-formulario">
+            <div id="formulario-login">
+                <h2>Entrar</h2>
+                <form action="/login" method="POST">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <input type="submit" value="Entrar">
+                </form>
+                <div class="link-alternar">
+                    <span>Não tem uma conta? </span><a href="javascript:void(0);" id="mostrar-cadastro">Cadastre-se</a>
+                </div>
+            </div>
+            <div id="formulario-cadastro" style="display: none;">
+                <h2>Cadastre-se</h2>
+                <form action="/register" method="POST">
+                    <input type="text" name="nome" placeholder="Nome Completo" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <input type="password" name="confirmar_senha" placeholder="Confirmar Senha" required>
+                    <input type="submit" value="Cadastrar">
+                </form>
+                <div class="link-alternar">
+                    <span>Já tem uma conta? </span><a href="javascript:void(0);" id="mostrar-login">Entre</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('mostrar-cadastro').addEventListener('click', function() {
+            document.getElementById('formulario-login').style.display = 'none';
+            document.getElementById('formulario-cadastro').style.display = 'block';
+        });
+
+        document.getElementById('mostrar-login').addEventListener('click', function() {
+            document.getElementById('formulario-login').style.display = 'block';
+            document.getElementById('formulario-cadastro').style.display = 'none';
+        });
+    </script>
+    <footer>
+        <div class="links-rodape">
+            <ul>
+                <li>Sobre</li>
+                <li>Termos e Condições</li>
+                <li>Privacidade</li>
+                <li>Fale Conosco</li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Livraria Leitura. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

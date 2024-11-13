@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A maior livraria online com ofertas imperdíveis de livros!">
+    <title>Livraria Leitura</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+   <header>
+    <div class="conteudo-cabecalho">
+        <div class="logo">
+            <a href="home.html">Livraria</a>
+        </div>
+
+        <nav class="barra-navegacao">
+            <ul>
+                <li><a href="home.html">Menu</a></li>
+                <li><a href="#">Livros</a></li>
+                <li><a href="#">Promoções</a></li>
+            </ul>
+         
+            <div class="campo-pesquisa">
+                <input type="text" placeholder="Pesquisar livros...">
+                <a href="#" class="icone-pesquisa"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="icones-cabecalho">
+                <a href="livros.html" class="icone"><i class="fas fa-shopping-cart"></i></a>
+                <a href="contato.html" class="icone"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </div>
+</header>
+<hr>
+
+    <section>
+    <div class="banner">
+    </div>
+    <div class="banner-conteudo">
+            <h1>Explore os Melhores Livros!</h1>
+            <p>Encontre ofertas exclusivas e lançamentos incríveis para sua próxima leitura.</p>
+            <a href="#" class="btn-primario">Veja Mais</a>
+    </div>
+</section>
+
+<section class="carrossel">
+    <h2>Livros em Destaque</h2>
+    <div class="conteiner-carrossel">
+        <div class="slide-carrossel">
+            <div class="item-carrossel">
+                <a href="livros.html"><img src="../HTML/livro1.png" alt="Livro 1"></a>
+                <div class="conteudo-carrossel">
+                    <h3>O Poder do Hábito</h3>
+                    <p>R$ 39,90</p>
+                </div>
+            </div>
+            <div class="item-carrossel">
+                <img src="../HTML/livro2.png" alt="Livro 2">
+                <div class="conteudo-carrossel">
+                    <h3>1984 - George Orwell</h3>
+                    <p>R$ 49,90</p>
+                </div>
+            </div>
+            <div class="item-carrossel">
+                <img src="../HTML/livro3.png" alt="Livro 3">
+                <div class="conteudo-carrossel">
+                    <h3>O Senhor dos Anéis</h3>
+                    <p>R$ 79,90</p>
+                </div>
+            </div>
+            <div class="item-carrossel">
+                <img src="../HTML/livro4.png" alt="Livro 4">
+                <div class="conteudo-carrossel">
+                    <h3>A Revolução dos Bichos</h3>
+                    <p>R$ 29,90</p>
+                </div>
+            </div>
+            <div class="item-carrossel">
+                <img src="../HTML/livro5.png" alt="Livro 5">
+                <div class="conteudo-carrossel">
+                    <h3>O Príncipe</h3>
+                    <p>R$ 39,90</p>
+                </div>
+            </div>
+            <div class="item-carrossel">
+                <img src="../HTML/livro6.png" alt="Livro 6">
+                <div class="conteudo-carrossel">
+                    <h3>Nexus: A Revolução dos Humanos e etc..</h3>
+                    <p>R$ 29,90</p>
+                </div>
+            </div>
+            <div class="item-carrossel">
+                <img src="../HTML/livro7.png" alt="Livro 7">
+                <div class="conteudo-carrossel">
+                    <h3>O Homem Não Existe</h3>
+                    <p>R$ 89,90</p>
+                </div>
+            </div>
+        </div>
+        <button class="anterior" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="proximo" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+    <footer>
+        <div class="links-rodape">
+            <ul>
+                <li>Sobre</li>
+                <li>Termos e Condições</li>
+                <li>Privacidade</li>
+                <li>Fale Conosco</li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Livraria Leitura. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

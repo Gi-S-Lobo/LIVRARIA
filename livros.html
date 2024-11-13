@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Cadastro - Livraria</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="conteudo-cabecalho">
+            <div class="logo">
+                <a href="home.html">Livraria</a>
+            </div>
+            <nav class="barra-navegacao">
+                <ul>
+                    <li><a href="home.html">Menu</a></li>
+                    <li><a href="#">Livros</a></li>
+                    <li><a href="#">Promoções</a></li>
+                </ul>
+                <div class="campo-pesquisa">
+                    <input type="text" placeholder="Pesquisar livros...">
+                    <a href="#" class="icone-pesquisa"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="icones-cabecalho">
+                    <a href="livros.html" class="icone"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="contato.html" class="icone"><i class="fas fa-user"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <div class="detalhes-livro">
+            <div class="imagem-livro">
+                <img src="../HTML/livro1.png" alt="O Poder do Hábito">
+            </div>
+            <div class="info-livro">
+                <h2>Livro - O poder do hábito: Por que fazemos o que fazemos na vida e nos negócios</h2>
+                <p class="autor"><u>Charles Duhigg</u> </p>
+                <p class="editora">Editora: Objetiva</p>
+                <p class="ano">Ano: 2012</p>
+                <p class="isbn">ISBN: 9788539004119</p>
+            </div>
+            <div class="avaliacao">
+                <span>★★★★☆ 4.5/5 (12 Avaliações)</span>
+           
+            <p class="descricao">
+                Charles Duhigg, repórter investigativo do New York Times, mostra que a chave para o sucesso é entender como os hábitos funcionam e como podemos transformá-los.
+            </p>
+            <p class="preco">R$ 34,90</p> 
+            <br>
+            <div class="container-quantidade">
+                <button class="botao-quantidade" id="botao-diminuir">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <input type="number" id="quantidade" class="input-quantidade" value="1" min="1" />
+                <button class="botao-quantidade" id="botao-aumentar">
+                    <i class="fas fa-plus"></i> 
+                </button>
+                
+            </div>
+            <p class="preco-total">Total: R$ <span id="preco-total">34,90</span></p>
+            <p><a href="contato.html"><button class="botao-comprar">Comprar</button></a></p> 
+        </div> 
+    </div>
+    </main>
+    <footer>
+        <div class="links-rodape">
+            <ul>
+                <li>Sobre</li>
+                <li>Termos e Condições</li>
+                <li>Privacidade</li>
+                <li>Fale Conosco</li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Livraria Leitura. Todos os direitos reservados.</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #5e2529;
+  padding: 20px 10px;
+  color: white;
+}
+
+.conteudo-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.barra-navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.barra-navegacao ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.barra-navegacao ul li {
+  margin-right: 20px;
+}
+
+.barra-navegacao ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.barra-navegacao ul li a:hover {
+  color: #f7b800;
+}
+
+.campo-pesquisa {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #5e2529;
+  padding: 5px;
+}
+
+.campo-pesquisa input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  width: 200px;
+}
+
+.campo-pesquisa input:focus {
+  border-color: #5e2529;
+}
+
+.icone-pesquisa {
+  margin-left: 5px;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.icone-pesquisa:hover {
+  color: #f7b800;
+}
+
+.icones-cabecalho {
+  display: flex;
+  gap: 20px;
+}
+
+.icones-cabecalho a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.icones-cabecalho a:hover {
+  color: #f7b800;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../../Documentos/HTML/planofundo_login.png') no-repeat center center;
+  background-size: cover;
+}
+
+.container-formulario {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5e2529;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #5e2529;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #e60000;
+}
+
+.link-alternar {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.link-alternar a {
+  color: #5e2529;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-alternar a:hover {
+  color: #e60000;
+}
+
+.banner {
+  background: url('../HTML/Banner\ para\ loja\ online\ moderno\ com\ desconto\ de\ livros\ black\ friday\ .png') no-repeat center center;
+  background-size: cover;
+  padding: 200px 20px;
+  color: white;
+}
+
+.banner-conteudo {
+  padding: 90px 10px;
+  text-align: center;
+}
+
+.banner-conteudo h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.banner-conteudo p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.banner-conteudo .btn-primario {
+  background-color: #f7b800;
+  color: #333;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.banner .btn-primario:hover {
+  background-color: #e60000;
+}
+
+
+.carrossel {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.carrossel h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.conteiner-carrossel {
+  position: relative;
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide-carrossel {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 200%;
+}
+
+.item-carrossel {
+  text-align: center;
+  padding: 10px;
+  width: 25%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-carrossel img {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.conteudo-carrossel {
+  text-align: center;
+}
+
+.conteudo-carrossel h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-right: 5px;
+}
+
+.conteudo-carrossel p {
+  font-size: 1rem;
+  color: #e60000;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.detalhes-livro {
+  display: flex;
+  justify-content:row;
+  padding: 30px;
+  max-width: 1100px;
+  margin: 200px;
+  background-color: #c1bfbf;
+  border-radius: 8px;
+  gap: 30px;
+}
+
+.imagem-livro {
+  flex-shrink: 0;
+}
+
+.imagem-livro img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.info-livro {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.info-livro h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.info-livro .autor,
+.info-livro .editora,
+.info-livro .ano,
+.info-livro .isbn {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.info-livro .preco {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c56156;
+  margin-top: 20px;
+}
+
+.info-livro .descricao {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.info-livro .avaliacao {
+  font-size: 1.2rem;
+  color: #b06c00;
+  margin-top: 10px;
+}
+
+.botao-quantidade {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.botao-quantidade i {
+  font-size: 1rem;
+}
+
+.botao-quantidade:hover {
+  background-color: #ddd;
+}
+
+.input-quantidade {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-quantidade:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.container-quantidade {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  
+}
+.preco-total {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.botao-comprar {
+  background-color: #FFD700;
+    color: #800020;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 220px;
+}
+
+.botao-comprar:hover {
+  background-color: #c0392b;
+  color:#c1bfbf;
+}
+
+@media (max-width: 768px) {
+  .detalhes-livro {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .imagem-livro img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .info-livro {
+    width: 100%;
+  }
+
+  .info-livro .preco {
+    font-size: 1.3rem;
+  }
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 2rem;
+  transform: translateY(-50%);
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.anterior {
+  left: 0px;
+}
+
+.proximo {
+  right: 0px;
+}
+
+@media (max-width: 768px) {
+  .item-carrossel {
+    width: 50%;
+  }
+
+  .item-carrossel img {
+    height: 200px;
+  }
+
+  .conteudo-cabecalho {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .barra-navegacao {
+      width: 100%;
+      margin-top: 10px;
+      justify-content: center;
+  }
+
+  .barra-navegacao ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .barra-navegacao ul li {
+      margin: 0px 0;
+  }
+
+  .icones-cabecalho {
+      justify-content: center;
+      gap: 5px;
+  }
+
+  .container-formulario {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  input[type="submit"] {
+      font-size: 16px;
+  }
+
+  .campo-pesquisa input {
+      width: 150px;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .links-rodape ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+footer .links-rodape ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+footer .links-rodape ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+footer .links-rodape ul li a:hover {
+  color: #f7b800;
+}
+
+footer p {
+  font-size: 12px;
+  margin-top: 10px;
+}
