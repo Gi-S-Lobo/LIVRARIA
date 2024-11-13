@@ -356,7 +356,7 @@ input[type="submit"]:hover {
 .input-quantidade {
   width: 40px;
   text-align: right;
-  margin-left: 16%;
+  margin-left: 12%;
 }
 
 .input-quantidade:focus {
