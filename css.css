@@ -374,7 +374,9 @@ input[type="submit"]:hover {
   margin-top: 50px;
 }
 
-
+#botao-diminuir{
+  margin-left: 5%;
+}
 
 .botao-comprar {
   background-color: #e74c3c;
