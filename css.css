@@ -213,7 +213,7 @@ input[type="submit"]:hover {
 }
 
 
-.carrossel {
+.carrossel{
   padding: 40px 20px;
   text-align: center;
 }
@@ -279,7 +279,7 @@ input[type="submit"]:hover {
   display: flex;
   padding: 30px;
   max-width: 1100px;
-  margin: 200px;
+  margin: 20px auto;
   background-color: #c1bfbf;
   border-radius: 8px;
   gap: 30px;
@@ -321,7 +321,7 @@ input[type="submit"]:hover {
   font-size: 1.5rem;
   font-weight: bold;
   color: #c56156;
-  margin-top: 20px;
+  margin-top: 2px;
 }
 
 .info-livro .descricao {
@@ -337,34 +337,6 @@ input[type="submit"]:hover {
   margin-top: 10px;
 }
 
-.botao-quantidade {
-  display: flex;
-  justify-content: space-around;
-  background-color: #800020;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 140px;
-}
-
-.botao-quantidade i {
-  font-size: 1rem;
-}
-
-.input-quantidade {
-  width: 50px;
-  padding: 2px;
-  text-align: right;
-  margin-left: 27px;
-}
-
-.input-quantidade:focus {
-  outline: none;
-  border-color: #007bff;
-}
-
 .container-quantidade {
   display: flex;
   align-items: center;
@@ -372,28 +344,77 @@ input[type="submit"]:hover {
   margin-top: 15px;
 }
 
-.preco-total{
-  margin-top: 30px;
+.botao-quantidade {
+  background-color: #800020;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-#botao-aumentar{
-  margin-left: 5%;
+.input-quantidade {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.input-quantidade:focus {
+  outline: none;
+  border-color: #007bff;
 }
 
 .botao-comprar {
   background-color: #e74c3c;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: 240px;
+  margin-top: 20px;
+  width: 35%;
 }
 
 .botao-comprar:hover {
   background-color: #c0392b;
+}
+
+.anterior{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 2rem;
+  transform: translateY(-50%);
+  left: 0px;
+}
+
+.proximo{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 2rem;
+  transform: translateY(-50%);
+  right: 0px;
+}
+.anterior:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.proximo:hover{
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 768px) {
@@ -414,82 +435,65 @@ input[type="submit"]:hover {
   .info-livro .preco {
     font-size: 1.3rem;
   }
-}
 
-button{
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 15px;
-  cursor: pointer;
-  font-size: 2rem;
-  transform: translateY(-50%);
-}
-
-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.anterior{
-  left: 0px;
-}
-
-.proximo{
-  right: 0px;
-}
-
-@media (max-width: 768px) {
-  .item-carrossel {
-    width: 50%;
+  .botao-quantidade {
+    padding: 8px;
+    font-size: 1rem;
   }
 
-  .item-carrossel img {
-    height: 200px;
+  .input-quantidade {
+    width: 40px;
+    font-size: 14px;
   }
 
-  .conteudo-cabecalho {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .barra-navegacao {
-      width: 100%;
-      margin-top: 10px;
-      justify-content: center;
-  }
-
-  .barra-navegacao ul {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .barra-navegacao ul li {
-      margin: 0px 0;
-  }
-
-  .icones-cabecalho {
-      justify-content: center;
-      gap: 5px;
-  }
-
-  .container-formulario {
-      width: 90%;
-      padding: 20px;
-  }
-
-  h2 {
-      font-size: 24px;
-  }
-
-  input[type="submit"] {
-      font-size: 16px;
+  .botao-comprar {
+    font-size: 16px;
   }
 
   .campo-pesquisa input {
-      width: 150px;
+    width: 150px;
+  }
+
+  .barra-navegacao {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .barra-navegacao ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barra-navegacao ul li {
+    margin: 5px 0;
+  }
+
+  .icones-cabecalho {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 18px;
+  }
+
+  .barra-navegacao ul li a {
+    font-size: 14px;
+  }
+
+  .botao-comprar {
+    font-size: 14px;
+  }
+
+  .input-quantidade {
+    width: 35px;
+    font-size: 12px;
+  }
+
+  .container-quantidade {
+    flex-direction: column;
   }
 }
 
