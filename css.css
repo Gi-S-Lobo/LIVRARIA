@@ -342,6 +342,7 @@ input[type="submit"]:hover {
   align-items: center;
   gap: 20px;
   margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 .botao-quantidade {
